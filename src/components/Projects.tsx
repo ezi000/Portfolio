@@ -95,7 +95,14 @@ const StyledHr = styled(Divider)`
   }
 `;
 
-const ProjectsArray = [
+type ProjectsArrayType = {
+  id: string;
+  name: string;
+  description: string;
+  link: string;
+};
+
+const ProjectsArray: ProjectsArrayType[] = [
   {
     id: "1",
     name: "Redux-TS",

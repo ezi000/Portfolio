@@ -82,7 +82,14 @@ const StyledHr = styled(Divider)`
   }
 `;
 
-const SkillsArray = [
+type SkillsArrayType = {
+  id: string;
+  name: string;
+  level: string;
+  logo: JSX.Element;
+};
+
+const SkillsArray: SkillsArrayType[] = [
   {
     id: "1",
     name: "HTML",
