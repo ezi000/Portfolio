@@ -25,7 +25,15 @@ export const NavBar = () => {
           >
             <StyledButton variant="contained"> Skills</StyledButton>
           </Link>
-          <StyledButton variant="contained"> Projects</StyledButton>
+
+          <Link
+            to="#projects"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "center" })
+            }
+          >
+            <StyledButton variant="contained"> Projects</StyledButton>
+          </Link>
         </Stack>
         <StyledAnchor
           href="https://www.linkedin.com/in/damian-szklarczyk-424529251/"

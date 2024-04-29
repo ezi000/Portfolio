@@ -8,6 +8,7 @@ import { NavBar } from "./components/NavBar";
 import { BrowserRouter } from "react-router-dom";
 import { Skills } from "./components/Skills";
 import { About } from "./components/About";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Avatar />
           <About />
           <Skills />
+          <Projects />
         </Body>
       </BrowserRouter>
     </>
