@@ -78,7 +78,7 @@ const StyledHr = styled(Divider)`
     width: 70vw;
     margin: 4rem 0 1rem 0;
     font-size: 2rem;
-    color: #e6e5e5;
+    color: #ffffff;
   }
 `;
 

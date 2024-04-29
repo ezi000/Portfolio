@@ -7,6 +7,7 @@ import "@fontsource/roboto/700.css";
 import { NavBar } from "./components/NavBar";
 import { BrowserRouter } from "react-router-dom";
 import { Skills } from "./components/Skills";
+import { About } from "./components/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Body>
           <NavBar />
           <Avatar />
+          <About />
           <Skills />
         </Body>
       </BrowserRouter>
@@ -28,7 +30,7 @@ const Body = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
 `;
 
 export default App;

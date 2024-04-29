@@ -39,7 +39,7 @@ const MyFullnameDiv = styled.div`
 `;
 
 const MarginForAvatar = styled.div`
-  margin-top: 4rem;
+  margin-top: 7rem;
   display: flex;
   gap: 1.5rem;
   align-items: center;
