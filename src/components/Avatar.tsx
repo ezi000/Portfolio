@@ -8,7 +8,7 @@ export default function Avatar() {
       <MuiAvatar
         alt="Image of me"
         sx={{ width: 250, height: 250 }}
-        src="\src\assets\images\image-of-me.jpg"
+        src="\assets\images\image-of-me.jpg"
       />
       <MyFullnameDiv>
         <RotationContainerTop>
