@@ -8,47 +8,49 @@ export const NavBar = () => {
   return (
     <>
       <Nav>
-        <Stack direction="row" spacing={2}>
-          <Link
-            to="#about"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "center" })
-            }
-          >
-            <StyledButton variant="contained"> About</StyledButton>
-          </Link>
-          <Link
-            to="#skills"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "center" })
-            }
-          >
-            <StyledButton variant="contained"> Skills</StyledButton>
-          </Link>
+        <StyledNavBar>
+          <Stack direction="row" spacing={2}>
+            <Link
+              to="#about"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              <StyledButton variant="contained"> About</StyledButton>
+            </Link>
+            <Link
+              to="#skills"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              <StyledButton variant="contained"> Skills</StyledButton>
+            </Link>
 
-          <Link
-            to="#projects"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "center" })
-            }
+            <Link
+              to="#projects"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              <StyledButton variant="contained"> Projects</StyledButton>
+            </Link>
+          </Stack>
+          <StyledAnchor
+            href="https://www.linkedin.com/in/damian-szklarczyk-424529251/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <StyledButton variant="contained"> Projects</StyledButton>
-          </Link>
-        </Stack>
-        <StyledAnchor
-          href="https://www.linkedin.com/in/damian-szklarczyk-424529251/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkedInIcon sx={{ fontSize: 40 }} />
-        </StyledAnchor>
-        <StyledAnchor
-          href="https://github.com/ezi000"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GitHubIcon sx={{ fontSize: 40 }} />
-        </StyledAnchor>
+            <LinkedInIcon sx={{ fontSize: 40 }} />
+          </StyledAnchor>
+          <StyledAnchor
+            href="https://github.com/ezi000"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon sx={{ fontSize: 40 }} />
+          </StyledAnchor>
+        </StyledNavBar>
       </Nav>
     </>
   );
@@ -57,14 +59,20 @@ export const NavBar = () => {
 const Nav = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
   justify-content: flex-end;
-  width: 100%;
-  padding: 0.5rem 3rem 0.5rem 0;
-  position: sticky;
+  padding: 0.5rem 3em 0.5rem 0;
+  position: fixed;
+  width: 100vw;
   top: 0;
   z-index: 1;
-  background-color: #1e1c1ccb;
+  background-color: #1e1c1c;
+`;
+
+const StyledNavBar = styled.div`
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const StyledButton = styled(Button)`

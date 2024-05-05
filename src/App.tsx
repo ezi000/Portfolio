@@ -31,8 +31,7 @@ const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
-  height: 200vh;
+  height: fit-content;
 `;
 
 export default App;

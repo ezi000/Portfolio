@@ -30,7 +30,7 @@ const MyFullnameDiv = styled.div`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
 
   @media (max-width: 768px) {
