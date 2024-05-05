@@ -112,26 +112,33 @@ const ProjectsArray: ProjectsArrayType[] = [
   },
   {
     id: "2",
+    name: "Quotedly",
+    description:
+      "Web app that allows users to add, like or dislike quotes. Made with React, Redux and TypeScript.",
+    link: "https://github.com/ezi000/Quotedly",
+  },
+  {
+    id: "3",
     name: "Filmovo",
     description:
       "Web app for searching movies and series. Made with React and JavaScript.",
     link: "https://github.com/ezi000/Filmovo",
   },
   {
-    id: "3",
+    id: "4",
     name: "Etch-a-Sketch",
     description:
       "Etch A Sketch with changeable grid size and rainbow bursh, made in JavaScript.",
     link: "https://github.com/ezi000/Etch-a-Sketch",
   },
   {
-    id: "4",
+    id: "5",
     name: "Calculator",
     description: "Calculator made in JavaScript.",
     link: "https://github.com/ezi000/Calculator",
   },
   {
-    id: "5",
+    id: "6",
     name: "Rock-Paper-Scissors",
     description:
       "Rock, Paper, Scissors game made in JavaScript, with authorization and MongoDB.",
