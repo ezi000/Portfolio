@@ -14,9 +14,7 @@ export default function Avatar() {
         <RotationContainerTop>
           <StyledTypography variant="h3">{"<"}</StyledTypography>
         </RotationContainerTop>
-
         <StyledTypography variant="h2">Damian_Szklarczyk</StyledTypography>
-
         <RotationContainerBottom>
           <StyledTypography variant="h3">{"/>"}</StyledTypography>
         </RotationContainerBottom>
